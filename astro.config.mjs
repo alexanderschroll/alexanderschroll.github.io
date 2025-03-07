@@ -8,6 +8,8 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   site: 'https://alexanderschroll.github.io/alexanderschroll.github.io/', // Replace with your GitHub Pages URL
   base: '/alexanderschroll.github.io/',
+  output: 'static',
+  adapter: staticSite(),
   integrations: [sitemap(), mdx(), pagefind()],
   vite: {
     plugins: [tailwindcss()],
